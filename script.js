@@ -17,6 +17,12 @@ const videoContainer = document.querySelector(".video-container"),
 
 let timer;
 
+/* Author: CodingNepal
+Date: 27 Jul 2022
+Title of source code: Build A Custom Video Player in HTML CSS & JavaScript
+Type: source code
+Web address: https://www.youtube.com/watch?v=-r9TTW0D3t4&ab_channel=CodingNepal */
+
 const hideControls = () => {
   if (mainVideo.paused) return;
   timer = setTimeout(() => {
@@ -191,6 +197,12 @@ mainVideo.addEventListener("timeupdate", () => {
     displayQuiz(quizData[currQuizIndex]);
   }
 });
+
+/* Author: GreatStack
+Date: 15 Mar 2023
+Title of source code: How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript
+Type: source code
+Web address: https://www.youtube.com/watch?v=PBcqGxrr9g8&ab_channel=GreatStack */
 
 const displayQuiz = (quiz) => {
   resetState();

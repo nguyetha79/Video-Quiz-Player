@@ -168,6 +168,12 @@ picInPicBtn.addEventListener("click", () => {
   mainVideo.requestPictureInPicture();
 });
 
+/* Author: Volodymyr Zhyliaev
+Date: 3 Mar 2024
+Title of source code: Creating a Custom Video Player with HTML5 and JavaScript
+Type: source code
+Web address: https://volodymyrzh.medium.com/creating-a-custom-video-player-with-html5-and-javascript-9c1a776c4865 */
+
 fullScreenBtn.addEventListener("click", () => {
   videoContainer.classList.toggle("fullscreen");
   if (document.fullscreenElement) {
@@ -175,7 +181,15 @@ fullScreenBtn.addEventListener("click", () => {
     return document.exitFullscreen();
   }
   fullScreenBtn.classList.replace("fa-expand", "fa-compress");
-  videoContainer.requestFullscreen();
+  if (videoContainer.requestFullscreen) {
+    videoContainer.requestFullscreen();
+} else if (videoContainer.mozRequestFullScreen) { /* Firefox */
+    videoContainer.mozRequestFullScreen();
+} else if (videoContainer.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    videoContainer.webkitRequestFullscreen();
+} else if (videoContainer.msRequestFullscreen) { /* IE/Edge */
+    videoContainer.msRequestFullscreen();
+}
 });
 
 /** QUIZ*/

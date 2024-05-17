@@ -178,7 +178,7 @@ fullScreenBtn.addEventListener("click", () => {
   videoContainer.requestFullscreen();
 });
 
-/** Quiz*/
+/** QUIZ*/
 const quizContainer = document.querySelector(".quiz-container"),
   quizTitle = quizContainer.querySelector(".quiz-title"),
   quizQuestion = quizContainer.querySelector(".quiz-question"),

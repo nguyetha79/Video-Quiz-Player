@@ -12,9 +12,6 @@ This project aims to build a custom video player using HTML, CSS, and JavaScript
 | ***Picture-in-Picture (PiP) Mode*** | This allows users to watch videos while browsing other content.|
 | ***Fullscreen Support*** | Users can toggle fullscreen mode for an immersive viewing experience.|
 
-## Deployment
-The app is deployed on the following website: https://video-quiz-player.netlify.app/
-
 ## Future Improvements
 In the future, I plan to reimplement this custom video player project using React. By leveraging React’s component-based architecture and state management, I aim to enhance the user experience and maintainability of the application
 
